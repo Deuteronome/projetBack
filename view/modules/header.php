@@ -9,8 +9,24 @@
     </div>
 
     <div id="headerLogin">
-        <!-- On fera ça plus tard -->
+        <?php
+            if(isset($_SESSION['nom'])){
+                ?>
+                     <h2>Bonjour <?php echo $_SESSION['nom'] ?></h2>
+                <?php
+            }else{
+                ?>
+                    <form method="post" action="../controller/home.php">
+                        <input name="nom" type="text">
+                        <input type="submit" value="votre nom">
+                    </form>
+                <?php
+            }
+        ?>
+        
+
     </div>
 
     
 </header>
+
