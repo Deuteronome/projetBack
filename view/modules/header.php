@@ -4,8 +4,8 @@
     </div>
 
     <div id="headerTitle">
-        <h1>Silence on lit!</h1>
-        <h3>Parce que le silence, c'est bien, n'est-ce pas Alex?</h3>
+        <h1><?php echo $pageTitle ?></h1>
+        <h3><?php echo $pageSubTitle ?></h3>
     </div>
 
     <div id="headerLogin">

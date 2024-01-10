@@ -1,5 +1,12 @@
 <?php
-        
+    $pageTitle = "Silence On Lit!";
+    $pageSubTitle = "Un temps de lecture à l'E⚁C!";    
+    
+    $buttonList= [
+        ["label" => "Accueil","url" => "../controller/home.php"],
+        ["label" => "Bibliothèque","url" => "../controller/books.php"]
+    ];
+
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +21,7 @@
      <?php
         require_once('../view/modules/header.php');
         require_once('../view/modules/nav.php');
+    
      ?>
 
      

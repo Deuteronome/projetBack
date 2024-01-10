@@ -1,5 +1,11 @@
 <?php
-        
+   $pageTitle = "La bibiothèque";
+   $pageSubTitle = "Choisissez votre imaginaire";   
+   
+   $buttonList= [
+    ["label" => "Accueil","url" => "../controller/home.php"],
+    ["label" => "Bibliothèque","url" => "../controller/books.php"]
+];
 ?>
 
 <!DOCTYPE html>

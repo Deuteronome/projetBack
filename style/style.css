@@ -59,7 +59,7 @@ header {
     border-left: var(--main-light) solid 3px;
 }
 
-.headerTitle>h1, .headerTitle>h3 {
+#headerTitle>h1, #headerTitle>h3 {
     font-family: 'birds';
     color: var(--main-light);
 }
