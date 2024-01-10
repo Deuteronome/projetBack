@@ -1,42 +1,82 @@
+@font-face {
+    font-family: 'birds';
+    src: url('../style/birds.ttf');
+}
+
+@font-face {
+    font-family: 'champagne';
+    src: url('../style/champagne.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --main-light : #acf3f3;
+    --main-dark : #1e4141;
+    
 }
 
 body {
-    background-color: #acf3f3;
+    background-color: var(--main-light);
+    font-family: 'champagne';
+    font-size: 3.5vh;
 }
 
 header {
     width : 100vw;
     height: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: var(--main-dark);
+}
+
+#headerLogo {
+    width : 15vw;
+    text-align: center;
+    padding: 1vh;
+}
+
+#solLogo {
+    height: 100%;
+}
+
+#headerTitle {
     
-    background-color: #1e4141;
+    width : 65vw;   
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-header>h1, header>h3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #acf3f3;
+
+#headerLogin {
+    width : 20vw;
+    border-left: var(--main-light) solid 3px;
 }
 
-header>h1 {
+.headerTitle>h1, .headerTitle>h3 {
+    font-family: 'birds';
+    color: var(--main-light);
+}
+
+.headerTitle>h1 {
     font-size: 8vh;
 }
 
-header>h3 {
+.headerTitle>h3 {
     font-size: 6vh;
 }
 
 nav {
     width : 100vw;
-    height: 10vh;
-    border-top: #acf3f3 solid 3px;
-    background-color: #1e4141;
+    height: 8vh;
+    border-top: var(--main-light) solid 3px;
+    background-color: var(--main-dark);
     
     display: flex;
     flex-direction: row;
@@ -46,17 +86,69 @@ nav {
 
 .navButton {
     display: block;
-    height: 7vh;
+    height: 6vh;
     width : 20vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5vh;
-    background-color: #1e4141;
-    color: #acf3f3;
+    font-family: 'birds';
+    padding-top: 1vh;
+    font-size: 4vh;
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    text-decoration: none;
     text-align: center;
     border-radius: 5px;
 }
 
 .navButton:hover {
-    color: #1e4141;
-    background-color: #acf3f3;
+    color: var(--main-dark);
+    background-color: var(--main-light);
 }
+
+main {
+    width : 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding : 5vh 0;
+}
+
+.articleContainer {
+    display : flex;
+    flex-direction : column;
+    justify-content: start;
+    width : 80vw;
+}
+
+.articleContainer>*:nth-child(1) {
+    align-self: flex-end;
+}
+
+.articleContainer>*:nth-child(2) {
+    align-self: flex-start;
+}
+
+.articleContainer>* {
+    width : 70vw;
+    background-color: var(--main-dark);
+    color : var(--main-light);
+    border-radius: 5px;
+    box-shadow: black 5px 5px 10px 0;
+    padding : 15px;
+    margin-bottom: 5vh;
+    text-align: justify;
+}
+
+#home1 {
+    width : 50%;
+    float : right;
+    margin: 5px;
+}
+
+#home2 {
+    width : 50%;
+    float : left;
+    margin: 5px;
+}
+
+
+
