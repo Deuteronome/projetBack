@@ -32,10 +32,11 @@ header {
     justify-content: space-between;
     align-items: stretch;
     background-color: var(--main-dark);
+    color: var(--main-light);
 }
 
 #headerLogo {
-    width : 15vw;
+    width : 13vw;
     text-align: center;
     padding: 1vh;
 }
@@ -55,13 +56,29 @@ header {
 }
 
 #headerLogin {
-    width : 20vw;
+    width : 22vw;
     border-left: var(--main-light) solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerLogin>form {
+    display : block;
+}
+
+#headerLogin>form>input {
+    display : block;
+    width : 20vw;
+    height: 6vh;
+    font-size: 4vh;
+    margin-bottom: 1vh;
 }
 
 #headerTitle>h1, #headerTitle>h3 {
     font-family: 'birds';
-    color: var(--main-light);
+    
 }
 
 .headerTitle>h1 {
@@ -96,6 +113,7 @@ nav {
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
+    border: none;
 }
 
 .navButton:hover {

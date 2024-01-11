@@ -18,7 +18,7 @@
                 ?>
                     <form method="post" action="../controller/home.php">
                         <input name="nom" type="text">
-                        <input type="submit" value="votre nom">
+                        <input class="navButton" type="submit" value="votre nom">
                     </form>
                 <?php
             }
