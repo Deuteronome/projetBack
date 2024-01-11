@@ -13,6 +13,7 @@
             if(isset($_SESSION['nom'])){
                 ?>
                      <h2>Bonjour <?php echo $_SESSION['nom'] ?></h2>
+                     <a class="navButton" href="../controller/logout.php">Déconnexion</a>
                 <?php
             }else{
                 ?>

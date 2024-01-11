@@ -1,6 +1,10 @@
 <?php
     session_start();
-    
+
+    if(!isset($_SESSION['nom'])){
+        header('location: ../controller/home.php');
+    }
+
    $pageTitle = "La bibiothèque";
    $pageSubTitle = "Choisissez votre imaginaire";   
    
