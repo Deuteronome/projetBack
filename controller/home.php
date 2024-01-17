@@ -14,8 +14,7 @@
     ];
 
     if(isset($_SESSION['nom'])){
-        $buttonList[]=["label" => "Bibliothèque","url" => "../controller/books.php"];
-        
+        $buttonList[]=["label" => "Bibliothèque","url" => "../controller/books.php"];       
     }
 
     require_once('../view/homeView.php');

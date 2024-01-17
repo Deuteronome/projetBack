@@ -168,5 +168,63 @@ main {
     margin: 5px;
 }
 
+/*Tableau des livres*/
 
+.bookContainer {
+    width : 80vw;
+    margin-top: 5vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.line {
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    width : 100%;
+    border : black solid 2px;
+   
+}
+
+#firstLine {
+    
+    background-color: var(--main-dark);
+    color : var(--main-light);
+    height: 5vh;
+    font-size: 3.5vh;
+    padding-top: 1vh;
+    font-family: 'birds';
+   
+}
+
+.titre {
+    width : 30%;
+    text-align: center;
+}
+
+.auteur {
+    width : 20%;
+    text-align: center;
+}
+
+.genre{
+    width : 15%;
+    text-align: center;
+}
+
+.annee {
+    width : 15%;
+    text-align: center;
+}
+
+.detail {
+    width : 15%;
+    text-align: center;
+}
 

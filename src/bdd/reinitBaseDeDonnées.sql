@@ -38,7 +38,7 @@ CREATE TABLE livres(
 )ENGINE=innoDB;
 
 CREATE VIEW livres_vw AS (
-    SELECT livres.titre, livres.auteur, DATE_FORMAT(livres.date_edition, '%Y') AS 'Année' , genres.nom
+    SELECT livres.id AS id, livres.titre, livres.auteur, DATE_FORMAT(livres.date_edition, '%Y') AS 'Année' , genres.nom
     FROM livres
     INNER JOIN genres ON livres.genre_id = genres.id
     ORDER BY livres.date_edition DESC);
