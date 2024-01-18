@@ -4,6 +4,7 @@
     require_once('../model/model.php');
 
     $bookBDD = connectDB();
+
     if(isset($_POST['selectedGenre'])) {
         if($_POST['selectedGenre']=='tous') {
             $bookList = getAllBooks($bookBDD);
@@ -12,11 +13,7 @@
         }
     } else {
         $bookList = getAllBooks($bookBDD);
-    }
-
-    
-
-    
+    }    
 
 
     $genreList = getAllGenres($bookBDD);

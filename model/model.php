@@ -29,6 +29,20 @@ function getBooksByGenre($bdd, $genre) {
     return $req;
 }
 
+function getBookById($bdd, $id) {
+    $sqlQuery = "SELECT * FROM livres WHERE id = :id";
+    $logStatement = $bdd->prepare($sqlQuery);
+    $logStatement->execute([
+        'id' => $id
+    ]);
+    $req = $logStatement->fetch();
+    $logStatement->closeCursor();
+
+    return $req;
+}
+
+
+
 //accés en lecture aux genres
 function getAllGenres($bdd) {
     $sqlQuery = "SELECT nom FROM genres ORDER BY id ASC";
